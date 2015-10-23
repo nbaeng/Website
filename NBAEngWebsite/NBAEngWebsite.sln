@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{181E0866-0AA8-444A-97B8-969FAACC1E05}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\NBA Website.doc = Documentation\NBA Website.doc
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nbaeng.Ui.Aspnet", "Nbaeng.Ui.Aspnet\Nbaeng.Ui.Aspnet.csproj", "{65A0FB87-3394-435B-B8B3-C9097620CFB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OriginalASPWebsite", "OriginalASPWebsite", "{E573DA4C-FC2C-4016-BC56-81847E3E77C5}"
+	ProjectSection(SolutionItems) = preProject
+		OriginalASPWebsite\ClassicAspSiteOriginalBackup.rar = OriginalASPWebsite\ClassicAspSiteOriginalBackup.rar
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzurePrototype", "AzurePrototype", "{5654FE4D-E553-4F7F-8116-D678C8881B4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65A0FB87-3394-435B-B8B3-C9097620CFB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A0FB87-3394-435B-B8B3-C9097620CFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A0FB87-3394-435B-B8B3-C9097620CFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A0FB87-3394-435B-B8B3-C9097620CFB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

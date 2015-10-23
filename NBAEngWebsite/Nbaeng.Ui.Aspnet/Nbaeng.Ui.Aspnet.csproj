@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65A0FB87-3394-435B-B8B3-C9097620CFB2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nbaeng.Ui.Aspnet</RootNamespace>
+    <AssemblyName>Nbaeng.Ui.Aspnet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <DesktopBuildPackageLocation>_Deploy\Debug\</DesktopBuildPackageLocation>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PublishDatabases>false</PublishDatabases>
+    <DesktopBuildPackageLocation>_Deploy\Release\</DesktopBuildPackageLocation>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\Css\NBAEng.css" />
+    <Content Include="App_Themes\Default\Images\address-icon.jpg" />
+    <Content Include="App_Themes\Default\Images\african_american_museum .jpg" />
+    <Content Include="App_Themes\Default\Images\Air-Train .jpg" />
+    <Content Include="App_Themes\Default\Images\arrow.jpg" />
+    <Content Include="App_Themes\Default\Images\BARTextention.jpg" />
+    <Content Include="App_Themes\Default\Images\BARTintermodal.jpg" />
+    <Content Include="App_Themes\Default\Images\BARTline.jpg" />
+    <Content Include="App_Themes\Default\Images\BARTmaintenance.jpg" />
+    <Content Include="App_Themes\Default\Images\BlueBackground.jpg" />
+    <Content Include="App_Themes\Default\Images\boardingareaG.jpg" />
+    <Content Include="App_Themes\Default\Images\caltrans.jpg" />
+    <Content Include="App_Themes\Default\Images\casa_de_balboa_museum .jpg" />
+    <Content Include="App_Themes\Default\Images\charlesphoward.jpg" />
+    <Content Include="App_Themes\Default\Images\civilengineering.jpg" />
+    <Content Include="App_Themes\Default\Images\construction_management.jpg" />
+    <Content Include="App_Themes\Default\Images\corporateyard.jpg" />
+    <Content Include="App_Themes\Default\Images\Cor_1.jpg" />
+    <Content Include="App_Themes\Default\Images\Cor_2.jpg" />
+    <Content Include="App_Themes\Default\Images\Cor_3.jpg" />
+    <Content Include="App_Themes\Default\Images\Cor_4.jpg" />
+    <Content Include="App_Themes\Default\Images\Cor_5.jpg" />
+    <Content Include="App_Themes\Default\Images\Cor_6.jpg" />
+    <Content Include="App_Themes\Default\Images\court_appeals_library .jpg" />
+    <Content Include="App_Themes\Default\Images\dunsmuir_house .jpg" />
+    <Content Include="App_Themes\Default\Images\electrical_engineering.jpg" />
+    <Content Include="App_Themes\Default\Images\elevatedroadways.jpg" />
+    <Content Include="App_Themes\Default\Images\energy_conservation.jpg" />
+    <Content Include="App_Themes\Default\Images\fax-icon.jpg" />
+    <Content Include="App_Themes\Default\Images\fire_1.jpg" />
+    <Content Include="App_Themes\Default\Images\fire_2.jpg" />
+    <Content Include="App_Themes\Default\Images\fire_3.jpg" />
+    <Content Include="App_Themes\Default\Images\fire_4.jpg" />
+    <Content Include="App_Themes\Default\Images\fire_5.jpg" />
+    <Content Include="App_Themes\Default\Images\fire_6.jpg" />
+    <Content Include="App_Themes\Default\Images\haywardstate.jpg" />
+    <Content Include="App_Themes\Default\Images\hotels_1.jpg" />
+    <Content Include="App_Themes\Default\Images\hotels_2.jpg" />
+    <Content Include="App_Themes\Default\Images\hotels_3.jpg" />
+    <Content Include="App_Themes\Default\Images\hotels_4.jpg" />
+    <Content Include="App_Themes\Default\Images\hotels_5.jpg" />
+    <Content Include="App_Themes\Default\Images\hotels_6.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_1.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_10.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_11.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_12.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_13.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_14.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_2.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_3.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_4.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_5.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_6.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_7.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_8.jpg" />
+    <Content Include="App_Themes\Default\Images\housing_9.jpg" />
+    <Content Include="App_Themes\Default\Images\hstoric_society_museum .jpg" />
+    <Content Include="App_Themes\Default\Images\hydestreet.jpg" />
+    <Content Include="App_Themes\Default\Images\islaiscreek.jpg" />
+    <Content Include="App_Themes\Default\Images\jointintermodal.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_1.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_10.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_11.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_12.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_13.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_14.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_15.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_16.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_17.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_18.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_19.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_2.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_20.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_21.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_22.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_23.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_24.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_25.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_26.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_27.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_3.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_4.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_5.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_6.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_7.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_8.jpg" />
+    <Content Include="App_Themes\Default\Images\k-12_9.jpg" />
+    <Content Include="App_Themes\Default\Images\levis.jpg" />
+    <Content Include="App_Themes\Default\Images\Logo.jpg" />
+    <Content Include="App_Themes\Default\Images\martin_luther_king .jpg" />
+    <Content Include="App_Themes\Default\Images\MechanicalRoom.jpg" />
+    <Content Include="App_Themes\Default\Images\MechanicalRoom2.JPG" />
+    <Content Include="App_Themes\Default\Images\MechanicalRoom3.jpg" />
+    <Content Include="App_Themes\Default\Images\MechanicalRoom4.jpg" />
+    <Content Include="App_Themes\Default\Images\MechanicalRoom5.jpg" />
+    <Content Include="App_Themes\Default\Images\mechanical_engineering.jpg" />
+    <Content Include="App_Themes\Default\Images\medical_1.jpg" />
+    <Content Include="App_Themes\Default\Images\medical_2.jpg" />
+    <Content Include="App_Themes\Default\Images\medical_3.jpg" />
+    <Content Include="App_Themes\Default\Images\medical_4.jpg" />
+    <Content Include="App_Themes\Default\Images\medical_5.jpg" />
+    <Content Include="App_Themes\Default\Images\medical_6.jpg" />
+    <Content Include="App_Themes\Default\Images\medical_7.jpg" />
+    <Content Include="App_Themes\Default\Images\medical_8.jpg" />
+    <Content Include="App_Themes\Default\Images\medical_9.jpg" />
+    <Content Include="App_Themes\Default\Images\missionhigh.jpg" />
+    <Content Include="App_Themes\Default\Images\MUNILR.jpg" />
+    <Content Include="App_Themes\Default\Images\NavBar.jpg" />
+    <Content Include="App_Themes\Default\Images\oaklandairport.jpg" />
+    <Content Include="App_Themes\Default\Images\OldMint.jpg" />
+    <Content Include="App_Themes\Default\Images\parks_1.jpg" />
+    <Content Include="App_Themes\Default\Images\parks_2.jpg" />
+    <Content Include="App_Themes\Default\Images\parks_3.jpg" />
+    <Content Include="App_Themes\Default\Images\parks_4.jpg" />
+    <Content Include="App_Themes\Default\Images\parks_5.jpg" />
+    <Content Include="App_Themes\Default\Images\parks_6.jpg" />
+    <Content Include="App_Themes\Default\Images\phone-icon.jpg" />
+    <Content Include="App_Themes\Default\Images\portofoakland.jpg" />
+    <Content Include="App_Themes\Default\Images\portofoaklandcarnation.jpg" />
+    <Content Include="App_Themes\Default\Images\portofoaklandmatson.jpg" />
+    <Content Include="App_Themes\Default\Images\portsharborsmarinas.jpg" />
+    <Content Include="App_Themes\Default\Images\project_profile.jpg" />
+    <Content Include="App_Themes\Default\Images\rest_1.jpg" />
+    <Content Include="App_Themes\Default\Images\rest_2.jpg" />
+    <Content Include="App_Themes\Default\Images\rest_3.jpg" />
+    <Content Include="App_Themes\Default\Images\rest_4.jpg" />
+    <Content Include="App_Themes\Default\Images\rest_5.jpg" />
+    <Content Include="App_Themes\Default\Images\rest_6.jpg" />
+    <Content Include="App_Themes\Default\Images\roosevelt_hotel  .jpg" />
+    <Content Include="App_Themes\Default\Images\san_diego_park .jpg" />
+    <Content Include="App_Themes\Default\Images\sfredlight.jpg" />
+    <Content Include="App_Themes\Default\Images\t2mechanical.jpg" />
+    <Content Include="App_Themes\Default\Images\university_1.jpg" />
+    <Content Include="App_Themes\Default\Images\university_2.jpg" />
+    <Content Include="App_Themes\Default\Images\university_3.jpg" />
+    <Content Include="App_Themes\Default\Images\university_4.jpg" />
+    <Content Include="App_Themes\Default\Images\university_5.jpg" />
+    <Content Include="App_Themes\Default\Images\university_6.jpg" />
+    <Content Include="App_Themes\Default\Images\university_7.jpg" />
+    <Content Include="App_Themes\Default\Images\university_8.jpg" />
+    <Content Include="App_Themes\Default\Images\university_9.jpg" />
+    <Content Include="App_Themes\Default\Images\utility_1.jpg" />
+    <Content Include="App_Themes\Default\Images\utility_10.jpg" />
+    <Content Include="App_Themes\Default\Images\utility_2.jpg" />
+    <Content Include="App_Themes\Default\Images\utility_3.jpg" />
+    <Content Include="App_Themes\Default\Images\utility_4.jpg" />
+    <Content Include="App_Themes\Default\Images\utility_5.jpg" />
+    <Content Include="App_Themes\Default\Images\utility_6.jpg" />
+    <Content Include="App_Themes\Default\Images\utility_7.jpg" />
+    <Content Include="App_Themes\Default\Images\utility_8.jpg" />
+    <Content Include="App_Themes\Default\Images\utility_9.jpg" />
+    <Content Include="App_Themes\Default\Images\waterresources.jpg" />
+    <Content Include="App_Themes\Default\Images\wharfembankment.jpg" />
+    <Content Include="App_Themes\Default\Images\willsonoma.jpg" />
+    <Content Include="App_Themes\Default\Images\YWCA.jpg" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Profile.aspx" />
+    <Content Include="Projects\Index.aspx" />
+    <Content Include="Projects\Correctional.aspx" />
+    <Content Include="Projects\FireLifeSafety.aspx" />
+    <Content Include="Projects\HistoricalRenovations.aspx" />
+    <Content Include="Projects\Hotels.aspx" />
+    <Content Include="Projects\Housing.aspx" />
+    <Content Include="Projects\K12.aspx" />
+    <Content Include="Projects\Medical.aspx" />
+    <Content Include="Projects\MedicalMisc.aspx" />
+    <Content Include="Projects\Commercial.aspx" />
+    <Content Include="Projects\Parks.aspx" />
+    <Content Include="Projects\Restaraunts.aspx" />
+    <Content Include="Projects\Transportation.aspx" />
+    <Content Include="Projects\Universities.aspx" />
+    <Content Include="Projects\Utilities.aspx" />
+    <Content Include="Projects\VentureFEJordan\CharlesHoward.aspx" />
+    <Content Include="Projects\VentureFEJordan\CivilEngineeringNorthField.aspx" />
+    <Content Include="Projects\VentureFEJordan\ElevatedRoadways.aspx" />
+    <Content Include="Projects\VentureFEJordan\JointIntermodal.aspx" />
+    <Content Include="Projects\VentureFEJordan\PortOfOaklandCarnation.aspx" />
+    <Content Include="Projects\VentureFEJordan\PortOfOaklandMatson.aspx" />
+    <Content Include="Projects\VentureFEJordan\PortOfOaklandTransBay.aspx" />
+    <Content Include="Projects\VentureFEJordan\PortsHarbors.aspx" />
+    <Content Include="Projects\VentureFEJordan\WaterResources.aspx" />
+    <Content Include="Projects\VentureFEJordan\WharfEmbankment.aspx" />
+    <Content Include="Scripts\ImageJS.js" />
+    <Content Include="Scripts\NBAEng.js" />
+    <Content Include="Services.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\NBAEng.master.cs">
+      <DependentUpon>NBAEng.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\NBAEng.master.designer.cs">
+      <DependentUpon>NBAEng.master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\NBAEngChild.master.cs">
+      <DependentUpon>NBAEngChild.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\NBAEngChild.master.designer.cs">
+      <DependentUpon>NBAEngChild.master</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Correctional.aspx.cs">
+      <DependentUpon>Correctional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\Correctional.aspx.designer.cs">
+      <DependentUpon>Correctional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\FireLifeSafety.aspx.cs">
+      <DependentUpon>FireLifeSafety.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\FireLifeSafety.aspx.designer.cs">
+      <DependentUpon>FireLifeSafety.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\HistoricalRenovations.aspx.cs">
+      <DependentUpon>HistoricalRenovations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\HistoricalRenovations.aspx.designer.cs">
+      <DependentUpon>HistoricalRenovations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Hotels.aspx.cs">
+      <DependentUpon>Hotels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\Hotels.aspx.designer.cs">
+      <DependentUpon>Hotels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Housing.aspx.cs">
+      <DependentUpon>Housing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\Housing.aspx.designer.cs">
+      <DependentUpon>Housing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\K12.aspx.cs">
+      <DependentUpon>K12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\K12.aspx.designer.cs">
+      <DependentUpon>K12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Medical.aspx.cs">
+      <DependentUpon>Medical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\Medical.aspx.designer.cs">
+      <DependentUpon>Medical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\MedicalMisc.aspx.cs">
+      <DependentUpon>MedicalMisc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\MedicalMisc.aspx.designer.cs">
+      <DependentUpon>MedicalMisc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Commercial.aspx.cs">
+      <DependentUpon>Commercial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\Commercial.aspx.designer.cs">
+      <DependentUpon>Commercial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Parks.aspx.cs">
+      <DependentUpon>Parks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\Parks.aspx.designer.cs">
+      <DependentUpon>Parks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Restaraunts.aspx.cs">
+      <DependentUpon>Restaraunts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\Restaraunts.aspx.designer.cs">
+      <DependentUpon>Restaraunts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Transportation.aspx.cs">
+      <DependentUpon>Transportation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\Transportation.aspx.designer.cs">
+      <DependentUpon>Transportation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Universities.aspx.cs">
+      <DependentUpon>Universities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\Universities.aspx.designer.cs">
+      <DependentUpon>Universities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Utilities.aspx.cs">
+      <DependentUpon>Utilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\Utilities.aspx.designer.cs">
+      <DependentUpon>Utilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\CharlesHoward.aspx.cs">
+      <DependentUpon>CharlesHoward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\CharlesHoward.aspx.designer.cs">
+      <DependentUpon>CharlesHoward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\CivilEngineeringNorthField.aspx.cs">
+      <DependentUpon>CivilEngineeringNorthField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\CivilEngineeringNorthField.aspx.designer.cs">
+      <DependentUpon>CivilEngineeringNorthField.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\ElevatedRoadways.aspx.cs">
+      <DependentUpon>ElevatedRoadways.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\ElevatedRoadways.aspx.designer.cs">
+      <DependentUpon>ElevatedRoadways.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\JointIntermodal.aspx.cs">
+      <DependentUpon>JointIntermodal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\JointIntermodal.aspx.designer.cs">
+      <DependentUpon>JointIntermodal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\PortOfOaklandCarnation.aspx.cs">
+      <DependentUpon>PortOfOaklandCarnation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\PortOfOaklandCarnation.aspx.designer.cs">
+      <DependentUpon>PortOfOaklandCarnation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\PortOfOaklandMatson.aspx.cs">
+      <DependentUpon>PortOfOaklandMatson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\PortOfOaklandMatson.aspx.designer.cs">
+      <DependentUpon>PortOfOaklandMatson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\PortOfOaklandTransBay.aspx.cs">
+      <DependentUpon>PortOfOaklandTransBay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\PortOfOaklandTransBay.aspx.designer.cs">
+      <DependentUpon>PortOfOaklandTransBay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\PortsHarbors.aspx.cs">
+      <DependentUpon>PortsHarbors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\PortsHarbors.aspx.designer.cs">
+      <DependentUpon>PortsHarbors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\WaterResources.aspx.cs">
+      <DependentUpon>WaterResources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\WaterResources.aspx.designer.cs">
+      <DependentUpon>WaterResources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\WharfEmbankment.aspx.cs">
+      <DependentUpon>WharfEmbankment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\VentureFEJordan\WharfEmbankment.aspx.designer.cs">
+      <DependentUpon>WharfEmbankment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\NBAEng.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\NBAEngChild.master" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24480</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

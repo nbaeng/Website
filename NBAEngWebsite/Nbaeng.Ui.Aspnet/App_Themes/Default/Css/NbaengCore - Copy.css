@@ -1,0 +1,181 @@
+﻿body
+{
+    background: black;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+hr
+{
+    display: none;
+}
+
+div
+{
+    border-style: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+div#header
+{
+    background-color: White;
+    /*position: relative;*/
+    /*height: 203px;*/
+}
+
+div#header-top
+{
+    background: url(../Images/HeaderLogo.jpg) no-repeat;
+    height: 101px;
+}
+
+div#header-bottom
+{
+    /*height: 77px;*/
+}
+
+div#header-bottom-text
+{
+    color: White;
+    width: 398px;
+    padding: 10px;
+}
+
+div#header-nav
+{
+    height: 28px;
+}
+
+
+
+ul#nav, ul#nav li
+{
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#nav li a
+{
+    display: block;
+    float: left;
+    padding: 3px;
+    text-transform: uppercase;
+}
+
+ul#nav li a:link, ul#nav li a:visited, ul#nav li a:active {
+	color: #fee6bd;
+	text-decoration: none;
+}
+
+ul#nav li a:hover
+{
+	color: #D7A44B;
+	text-decoration: none;
+}
+
+div#content
+{
+    background-color: White;
+}
+
+div#footer
+{
+    background-color: #3c5985;
+    color: White;
+    text-align: right;
+}
+
+.header-gradient-bg
+{
+   /* fallback/image non-cover color */
+   background-color: #3c5985; 
+
+   /* fallback image */
+   background: url(../Images/HeaderBackground.jpg) repeat;
+
+   /* Safari 4+, Chrome 1-9 */
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6e98c8), to(#3c5985));
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+   background-image: -webkit-linear-gradient(top, #6e98c8, #3c5985); 
+
+   /* Firefox 3.6+ */
+   background-image: -moz-linear-gradient(top, #6e98c8, #3c5985);
+
+   /* IE 10+ */
+   background-image: -ms-linear-gradient(top, #6e98c8, #3c5985);
+
+   /* Opera 11.10+ */
+   background-image: -o-linear-gradient(top, #6e98c8, #3c5985);
+}
+
+.bluebar-gradient-bg
+{
+   /* fallback/image non-cover color */
+   background-color: #3c5985; 
+
+   /* fallback image */
+   background: url(../Images/BlueBar.jpg) repeat;
+
+   /* Safari 4+, Chrome 1-9 */
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6e98c8), to(#3c5985));
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+   background-image: -webkit-linear-gradient(top, #6e98c8, #3c5985); 
+
+   /* Firefox 3.6+ */
+   background-image: -moz-linear-gradient(top, #6e98c8, #3c5985);
+
+   /* IE 10+ */
+   background-image: -ms-linear-gradient(top, #6e98c8, #3c5985);
+
+   /* Opera 11.10+ */
+   background-image: -o-linear-gradient(top, #6e98c8, #3c5985);
+}
+
+.nav-gradient-bg
+{
+   /* fallback/image non-cover color */
+   background-color: #806321; 
+
+   /* fallback image */
+   background: url(../Images/NavBar.jpg) repeat;
+
+   /* Safari 4+, Chrome 1-9 */
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d9a64b), to(#806321));
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+   background-image: -webkit-linear-gradient(top, #d9a64b, #806321); 
+
+   /* Firefox 3.6+ */
+   background-image: -moz-linear-gradient(top, #d9a64b, #806321);
+
+   /* IE 10+ */
+   background-image: -ms-linear-gradient(top, #d9a64b, #806321);
+
+   /* Opera 11.10+ */
+   background-image: -o-linear-gradient(top, #d9a64b, #806321);
+}
+
+div#content-container
+{
+    background-color: Purple;
+}
+
+
+div#company-blurb1
+{
+    background-color: Gray;
+    float: left;
+}
+
+div#company-services
+{
+    background-color: Red;
+    float: right;
+}
+
+

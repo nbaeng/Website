@@ -1,0 +1,489 @@
+﻿/* ************** */
+/* general styles */
+/* ************** */
+div, img, p
+{
+    border: 0px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-color: black; /* #FDF1DB; */
+    font-family: "Palatino Linotype", Verdana, Geneva, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+p, .justifyText
+{
+    text-align: justify;
+}
+
+div#root-container
+{
+    margin: 0px auto;
+    padding: 0;
+    /* width: 960px; */
+    width: 1200px;
+    background-color: #FDF1DB;
+}
+
+hr 
+{
+    display: none
+}
+
+h2
+{
+    color: White;
+    background: #6e98c8;
+    padding: 1px;
+    font-size: small;
+}
+
+h4
+{
+    margin-bottom: 0em;
+    color: #3c5985;
+    font-size: large;
+}
+
+.floatL 
+{
+	/* background: pink; */
+    float: left;
+}
+
+.floatR
+{
+	/* background: yellow; */
+    float: right;
+}
+
+.clear 
+{
+    clear: both;
+}
+
+.bar-gradient-bg, div.container h2
+{
+   /* fallback/image non-cover color */
+   background-color: #3c5985; 
+
+   /* fallback image */
+   /* background: url(../Images/BlueBar.jpg) repeat; */
+
+   /* Safari 4+, Chrome 1-9 */
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6e98c8), to(#3c5985));
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+   background-image: -webkit-linear-gradient(top, #6e98c8, #3c5985); 
+
+   /* Firefox 3.6+ */
+   background-image: -moz-linear-gradient(top, #6e98c8, #3c5985);
+
+   /* IE 10- */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e98c8', endColorstr='#3c5985');
+   
+   /* IE 10+ */
+   background-image: -ms-linear-gradient(top, #6e98c8, #3c5985);
+
+   /* Opera 11.10+ */
+   background-image: -o-linear-gradient(top, #6e98c8, #3c5985);
+}
+
+/* ************** */
+/* Containers     */
+/* ************** */
+div.container
+{
+    border: 1px solid #6D97C7;
+    margin: 1%;
+    padding: 0px;
+    width: 47%;
+    height: 375px;
+}
+
+div.container h2
+{
+    background-color: #3C5985;
+    color: White;
+    margin: 0;
+    padding: 4px;
+}
+
+div.container img
+{
+    display: block;
+    margin: 5px auto 0px auto;
+}
+
+div.container-narrow
+{
+    margin: 1%;
+    padding: 0%;
+    width: 47%;
+    height: 338px;
+}
+
+/* ************** */
+/* Icons          */
+/* ************** */
+ul.contactInfo
+{
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+ul.contactInfo li
+{
+    /* border: 1px solid red; */
+    background-repeat: no-repeat;
+    background-position: 0px 0px; 
+    padding-left: 50px;
+    height: 40px;
+}
+
+li.address
+{
+    background-image: url('../Images/address-icon.jpg');
+}
+
+ul li.phone
+{
+    background-image: url('../Images/phone-icon.jpg');
+}
+
+ul li.fax
+{
+    background-image: url('../Images/fax-icon.jpg');
+}
+
+/* ************** */
+/* header         */
+/* ************** */
+div#header-container
+{
+    background: white;
+}
+
+div#header-container-left
+{
+    float: left;
+    /* width: 592px; */
+    width: 832px;
+    /* border: 1px solid black; */
+}
+
+div#header-container-left p
+{
+    color: White;
+    border: 0px solid red;
+    padding: 1% 1% 1% 3%
+}
+
+div#header-container-right
+{
+    float: right;
+    width: 368px;
+    height: 100%;
+}
+
+div#header-container-right img
+{
+    width: 100%;
+    height: 172px;
+}
+
+/* ************** */
+/* navigation     */
+/* ************** */
+div#nav
+{
+    height: 28px;
+    padding-left: 185px;
+}
+
+div#nav ul, div#nav ul li
+{
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div#nav ul li a
+{
+    display: block;
+    float: left;
+    padding: 3px 30px 3px 30px;
+    margin: 2px;
+    text-transform: uppercase;
+    border: px solid black;
+    font-family: Arial,Sans-Serif;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+div#nav ul li a:link, div#nav ul li a:visited, div#nav ul li a:active {
+	color: #fee6bd;
+	text-decoration: none;
+}
+
+div#nav ul li a:hover
+{
+	color: #D7A44B;
+	text-decoration: none;
+}
+
+.nav-gradient-bg
+{
+   /* fallback/image non-cover color */
+   background-color: #806321; 
+
+   /* fallback image */
+   /*background: url(../Images/NavBar.jpg) repeat;*/
+
+   /* Safari 4+, Chrome 1-9 */
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d9a64b), to(#806321));
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+   background-image: -webkit-linear-gradient(top, #d9a64b, #806321); 
+
+   /* Firefox 3.6+ */
+   background-image: -moz-linear-gradient(top, #d9a64b, #806321);
+
+   /* IE 10- */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9a64b', endColorstr='#806321');
+    
+   /* IE 10+ */
+   background-image: -ms-linear-gradient(top, #d9a64b, #806321);
+
+   /* Opera 11.10+ */
+   background-image: -o-linear-gradient(top, #d9a64b, #806321);
+}
+
+/* ************** */
+/* content        */
+/* ************** */
+div#content-container
+{
+    margin: 2% 1% 1% 1%;
+    
+}
+
+/* ************** */
+/* pages          */
+/* ************** */
+div.sidebar
+{
+    /* border: 1px solid black; */
+    /* background: blue; */
+    float: left;
+    width: 24%;
+}
+
+div.sidebar p
+{
+    padding: 15px 5px 15px 5px;
+}
+
+div.sidebar img
+{
+    display: block;
+    float: left;
+    margin: 2px;
+    width: 99px;
+}
+
+div.sideContent
+{
+	/* border: 1px solid black; */
+	/* background: red; */
+    float: right;
+    width: 73%;
+    padding: 1%;
+}
+
+div#map
+{
+    text-align: center;
+}
+
+div#map iframe
+{
+    display: block;
+    margin: 8px auto 0px auto;
+}
+
+div#tabContactUs div p
+{
+    text-align: center;
+}
+
+/* ************** */
+/* tabs			  */
+/* ************** */
+div.tab
+{
+    border: 1px solid #375682;
+    margin: 0px;
+    padding: 5px 10px 5px 10px;
+}
+
+.ui-tabs-hide 
+{
+    display: none;
+}
+
+div#tabs > ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 22px;
+}
+
+div#tabs > ul li
+{
+    float: left;
+    height: 17px;
+    margin-right: 5px;
+    border: 0px solid red;
+    border-bottom: 1px solid #3D5981;
+    position: relative;
+}
+
+div#tabs > ul li a {
+    border: 1px solid #ccc;
+    padding: 4px 20px;
+    text-decoration: none;
+    background-color: #3D5981;
+    border-bottom: none;
+    outline: none;
+    color: White;
+    
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+}
+
+div#tabs > ul li a:hover {
+    background-color: #6e98c8;
+    padding: 4px 20px;
+}
+
+div#tabs > ul li.ui-tabs-selected a
+{
+    background-color: #6e98c8;
+    padding: 4px 20px;
+}
+
+/* footer */
+div#footer-container 
+{
+    background: #3D5981;
+    color: White;
+    text-align: right;
+    font-size: 9pt;
+    padding: 5px 15px 5px 15px;
+}
+
+/* ************** */
+/* Project Pages */
+/* ************** */
+.projectWrapper
+{
+	margin-bottom: 1%;
+}
+
+.projectWrapper .sideContent
+{
+	padding-top: 0;
+} 
+
+.projectWrapper h3
+{
+	display: inline;
+	font-style: normal;
+	color: #0066FF;
+	padding: 0;
+	margin: 0;
+}
+
+#tabTransportation div img
+{
+    width: 149px;
+    height: 106px;
+}
+
+#tabFireLifeSafety div img
+{
+    width: 149px;
+    height: 81px;
+}
+
+#tabParks div img
+{
+    width: 148px;
+    height: 98px;
+}
+
+#tabUtilities div img
+{
+    width: 149px;
+    height: 79px;
+}
+
+#tabHotels div img
+{
+    width: 149px;
+    height: 98px;
+}
+
+#tabRestaraunts div img
+{
+    width: 149px;
+    height: 81px;
+}
+
+#tabCorrectional div img
+{
+    width: 148px;
+    height: 98px;
+}
+
+#tabK12 div img
+{
+    width: 149px;
+    height: 81px;
+}
+
+#tabUniversities div img
+{
+    width: 149px;
+    height: 99px;
+}
+
+#tabHistoricalRenovations div img
+{
+    width: 144px;
+    height: 96px;
+}
+
+#tabHousing div img
+{
+    width: 149px;
+    height: 99px;
+}
+
+#tabMedical div img
+{
+    width: 149px;
+    height: 91px;
+}

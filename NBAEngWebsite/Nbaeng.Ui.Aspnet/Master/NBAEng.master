@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NBAEng.master.cs" Inherits="Nbaeng.Ui.Aspnet.Master.NBAEng1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link type="text/css" href="/App_Themes/Default/Css/NBAEng.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/Scripts/NBAEng.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32528155-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="root-container">
+            <div id="header-container">
+                <div id="header-container-left">
+                    <img src="/App_Themes/Default/Images/Logo.jpg" alt="/App_Themes/Default/Images/Logo.jpg" />  
+                    <div class="bar-gradient-bg">
+                        <p>
+                            NBA Engineering, Inc. has been providing award winning mechanical & electrical engineering design
+                            and construction management services since 1994. NBA has offices in San Francisco, Oakland and Los Angeles.
+                            NBA is a WBE/DBE/UDBE/LBE/SBE/SLEB/CBE with offices in San Francisco, Oakland and Los Angeles and we have LEED 
+                            Accredited professionals on staff.
+                        </p>
+                    </div>
+                </div>
+                <div id="header-container-right">
+                    <img src="/App_Themes/Default/Images/MechanicalRoom5.jpg" alt="/App_Themes/Default/Images/MechanicalRoom5.jpg" />
+                </div>
+
+                <div class="clear"></div>
+
+                <div id="nav" class="nav-gradient-bg">
+                    <ul>
+                        <li><a href="/Index.aspx">Home</a></li>
+                        <li><a href="/Profile.aspx">Profile</a></li>
+                        <li><a href="/Services.aspx">Services</a></li>
+                        <li><a href="/Projects/Index.aspx">Projects</a></li>
+                        <li><a href="/ContactUs.aspx">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div id="content-container">
+                <asp:ContentPlaceHolder ID="content" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <hr />
+            <div id="footer-container">
+                Copyright &copy; 2006 NBA Engineering, Inc., All Rights Reserved
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
